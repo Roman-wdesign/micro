@@ -1,0 +1,21 @@
+.catalog__container_currency {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat( auto-fill, minmax(12rem, 1fr));
+  grid-template-rows: repeat(1, 15rem);
+  gap: 10px;
+  flex-wrap: wrap;
+
+}
+.item__catalog-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0;
+  background-color: #ead949;
+}
+
+.item__catalog-img {
+  width: 5rem;
+  height: 7rem
+}
