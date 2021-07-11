@@ -2,8 +2,15 @@
   <div class="item__catalog">
     <div class="item__catalog-card">
       <p>{{ animal_data.category }}</p>
-      <p>1</p>
-      <div class="item__catalog-img"></div>
+      <p>{{ animal_data.filesize }} KB</p>
+
+      <div class="img">
+        <img
+          class="item__catalog-img"
+          :src="'http://contest.elecard.ru/frontend_data/' + animal_data.image"
+          alt="img"
+        />
+      </div>
     </div>
   </div>
 </template>

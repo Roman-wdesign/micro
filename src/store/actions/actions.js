@@ -7,7 +7,7 @@ export default {
       method: "GET",
     })
       .then((response) => {
-        commit("SET_ANIMALS_TO_STATE", response.data.results);
+        commit("SET_ANIMALS_TO_STATE", response.data);
         return response;
       })
       .finally(() =>

@@ -14,6 +14,7 @@ let store = new Vuex.Store({
     timestamp: String,
     filesize: String,
     id: String,
+    image: String,
   },
 
   mutations,
