@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat( auto-fill, minmax(12rem, 1fr));
   grid-template-rows: repeat(1, 15rem);
-  gap: 10px;
+  gap: 1rem;
   flex-wrap: wrap;
 
 }
@@ -16,8 +16,9 @@
 }
 
 .item__catalog-img {
-  width: 5rem;
-  height: 7rem
+  max-width: 100%;
+  max-height: 100%;
+
 }
 p {
   margin: 0;
