@@ -1,6 +1,9 @@
 <template>
   <div class="item__catalog">
     <div class="item__catalog-card">
+      <button class="item__catalog__add_btn btn">
+        <span class="material-icons md-18">cancel</span>
+      </button>
       <p>{{ animal_data.category }}</p>
       <p>{{ animal_data.filesize }} KB</p>
 
