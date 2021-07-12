@@ -1,11 +1,17 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <Header />
+    <Catalog />
+    <Footer />
   </div>
 </template>
 
 <style></style>
+<script>
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Catalog from "./components/Catalog";
+export default {
+  components: { Catalog, Footer, Header },
+};
+</script>
