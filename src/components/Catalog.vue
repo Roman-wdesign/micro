@@ -1,5 +1,16 @@
 <template>
   <div class="catalog">
+    <div class="catalog__pagination">
+      <button
+        class="catalog__pagination__page"
+        v-for="page in pages"
+        :key="page"
+        :class="{ catalog__pagination__page__selected: page === pageFirst }"
+        @click="pageChangeClick(page)"
+      >
+        {{ page }}
+      </button>
+    </div>
     <div class="catalog__container_currency">
       <CatalogItem
         v-for="(animal, id) in paginatedAnimals"
@@ -10,17 +21,6 @@
         :image="animal.image"
         :animal_data="animal"
       />
-      <div class="catalog__pagination">
-        <button
-          class="catalog__pagination__page"
-          v-for="page in pages"
-          :key="page"
-          :class="{ catalog__pagination__page__selected: page === pageFirst }"
-          @click="pageChangeClick(page)"
-        >
-          {{ page }}
-        </button>
-      </div>
     </div>
   </div>
 </template>
@@ -33,14 +33,14 @@ export default {
   name: "Catalog",
   components: { CatalogItem },
   data: () => ({
-    animalsOnPage: 50,
+    animalsOnPage: 13,
     pageFirst: 1,
   }),
 
   computed: {
     ...mapGetters(["ANIMALS"]),
     pages() {
-      return Math.ceil(this.ANIMALS.length / 10);
+      return Math.ceil(this.ANIMALS.length / 13);
     },
     paginatedAnimals() {
       let from = (this.pageFirst - 1) * this.animalsOnPage;

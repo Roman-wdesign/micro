@@ -1,9 +1,9 @@
 .catalog__container_currency {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: grid;
-  grid-template-columns: repeat( auto-fill, minmax(12rem, 1fr));
-  grid-template-rows: repeat(1, 15rem);
-  gap: 1rem;
+  grid-template-columns: repeat( auto-fill, minmax(15rem, 1fr));
+  //grid-template-rows: repeat(1, 15rem);
+  gap: 5rem;
   flex-wrap: wrap;
 
 }
