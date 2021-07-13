@@ -1,0 +1,26 @@
+.radio{
+  display: flex;
+  padding: 5rem 0 0 0;
+  justify-content: left;
+  flex-direction: row;
+  text-align: center;
+
+  p{
+    text-align: center;
+    margin: $radio-p;
+  }
+  @media (max-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    p{
+      margin: $radio-p-411;
+    }
+  }
+  @media (max-width: 411px) {
+    display: flex;
+    flex-direction: column;
+    p{
+      margin: $radio-p-411;
+    }
+  }
+}

@@ -1,6 +1,6 @@
+@import "src/assets/styles/mixins";
+
 .header{
   top: 0;
-  position: fixed;
-  background-color: rgba(210, 210, 210, 0.50);
-  width: 100%;
+  @include footer-and-header;
 }
