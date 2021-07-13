@@ -1,0 +1,28 @@
+.select {
+  position: relative;
+  width: 200px;
+  cursor: pointer;
+  text-align: left;
+
+}
+.select__title {
+  border: solid 1px #aeaeae;
+  padding: 8px;
+}
+.select p {
+  margin: 0;
+}
+
+.select__options {
+  border: solid 1px #aeaeae;
+  background: #ffffff;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  padding: 8px;
+}
+
+.select__options p:hover {
+  background: #e7e7e7;
+}

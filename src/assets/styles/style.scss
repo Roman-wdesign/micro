@@ -2,9 +2,11 @@
 @import "modules/catalog";
 @import "modules/header";
 @import "modules/footer";
+@import "modules/select";
 @import "mixins";
 
-@import "buttons/radio";
+@import "buttons/radio-button";
+@import "buttons/reset-button";
 
 
 .main {

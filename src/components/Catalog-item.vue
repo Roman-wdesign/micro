@@ -6,6 +6,7 @@
       </button>
       <p>{{ animal_data.category }}</p>
       <p>{{ animal_data.filesize }} KB</p>
+      <p>{{ animal_data.timestamp }}</p>
 
       <div class="img">
         <img

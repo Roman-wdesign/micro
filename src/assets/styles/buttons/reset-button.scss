@@ -1,0 +1,13 @@
+@import "src/assets/styles/mixins";
+
+.reset__button{
+  margin: 1rem  0;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.reset__button_btn{
+  padding: $padding;
+  cursor: pointer;
+}
