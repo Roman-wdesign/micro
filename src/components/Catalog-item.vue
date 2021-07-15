@@ -1,7 +1,10 @@
 <template>
   <div class="item__catalog">
     <div class="item__catalog-card">
-      <button class="item__catalog__add_btn btn">
+      <button
+        class="item__catalog__add_btn btn"
+        @click="closeCard = !closeCard"
+      >
         <span class="material-icons md-18">cancel</span>
       </button>
       <p>{{ animal_data.category }}</p>
@@ -23,7 +26,9 @@
 export default {
   name: "Catalog-item",
 
-  data: () => ({}),
+  data: () => ({
+    closeCard: false,
+  }),
 
   props: {
     animal_data: {
