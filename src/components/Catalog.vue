@@ -8,12 +8,15 @@
         <p>Выбрано: {{ radio_selected }}</p>
       </div>
       <div class="reset__button">
-        <button class="reset__button_btn">Reset pages to default</button>
+        <button class="reset__button_btn" @click="returnCards">
+          Reset pages to default
+        </button>
       </div>
       <Sorting
         :selected="selected"
         :options="categories"
         @select="sortByCategory"
+        placeholder="Change category"
       />
     </div>
     <div class="catalog__pagination">
@@ -29,8 +32,8 @@
     </div>
     <div class="catalog__container_currency">
       <CatalogItem
-        v-for="(animal, value) in filteredAnimals"
-        :key="value"
+        v-for="(animal, index) in filteredAnimals"
+        :key="index"
         :category="animal.category"
         :timestamp="animal.timestamp"
         :filesize="animal.filesize"
@@ -63,7 +66,7 @@ export default {
       { name: "vehicle", value: "vehicle" },
       { name: "All", value: "All" },
     ],
-    selected: "All",
+    selected: "Select category",
     radio_selected: "cards",
     sortedAnimals: [],
   }),
