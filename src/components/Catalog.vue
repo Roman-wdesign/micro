@@ -2,9 +2,11 @@
   <div class="catalog">
     <div class="sorting_section">
       <div class="radio">
-        <input type="radio" value="cards" v-model="selected" />cards view<br />
-        <input type="radio" value="tree" v-model="selected" />tree view<br />
-        <p>Выбрано: {{ selected }}</p>
+        <input type="radio" value="cards" v-model="button_selected" />cards
+        view<br />
+        <input type="radio" value="tree" v-model="button_selected" />tree
+        view<br />
+        <p>Выбрано: {{ button_selected }}</p>
       </div>
       <div class="reset__button">
         <button class="reset__button_btn">Reset pages to default</button>
@@ -63,6 +65,7 @@ export default {
       { name: "All", value: "All" },
     ],
     selected: "All",
+    button_selected: true,
     sortedAnimals: [],
   }),
 
