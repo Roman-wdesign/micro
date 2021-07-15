@@ -65,7 +65,7 @@ export default {
       { name: "All", value: "All" },
     ],
     selected: "All",
-    button_selected: true,
+    button_selected: "cards",
     sortedAnimals: [],
   }),
 
